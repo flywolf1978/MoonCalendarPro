@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="#b4bdc5"
+    android:id="@+id/top_layout"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/top_banner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager_top"
+                android:layout_width="fill_parent"
+                android:layout_height="420dp"
+                android:layout_gravity="center_horizontal" >
+            </android.support.v4.view.ViewPager>
+
+            <TextView
+                android:id="@+id/add_request"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/add_request"
+                android:textColor="#000066"
+                android:textSize="10sp" />
+           <LinearLayout
+                android:id="@+id/bottom_banner"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:visibility="invisible" >
+
+                <Button
+                    android:id="@+id/aroma"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/wifi"
+                    android:onClick="onClickAroma"
+                    android:text="@string/read_more"
+                    android:textColor="#0000cc"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+            </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

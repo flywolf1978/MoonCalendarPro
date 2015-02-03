@@ -1,0 +1,2 @@
+/home/flywolf/AndroidstudioProjects/MoonCalendarPro/app/build/intermediates/classes/debug
+/home/flywolf/AndroidstudioProjects/MoonCalendarPro/app/build/intermediates/pre-dexed/debug/support-v4-18.0.0-0a5c669213b3f343d8c0fe6ddc3b619a4a01f6c8.jar

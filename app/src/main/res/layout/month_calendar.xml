@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#b4bdc5"
+    android:orientation="vertical"
+    tools:ignore="InefficientWeight,ContentDescription" >
+   <LinearLayout
+        android:id="@+id/top_banner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/buttonlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="60sp"
+        android:gravity="left|top"
+        android:height="60sp"
+        android:orientation="horizontal" >
+
+        <Spinner
+            android:id="@+id/moon_spinner"
+            android:layout_width="85dp"
+            android:background="#ffffff"
+            android:layout_height="60dp" />
+
+        <ImageView
+            android:id="@+id/prevMonth"
+            android:layout_width="20sp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10sp"
+            android:src="@drawable/left_arrow" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/currentMonth"
+            android:layout_width="fill_parent"
+            android:layout_height="60sp"
+            android:layout_weight="0.6"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/nextMonth"
+            android:layout_width="20sp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="10sp"
+            android:src="@drawable/right_arrow" >
+        </ImageView>
+
+    </LinearLayout>
+
+
+    <GridView
+        android:id="@+id/calendar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#424242"
+        android:paddingBottom="1dp"
+        android:numColumns="7" >
+    </GridView>
+
+</LinearLayout>
